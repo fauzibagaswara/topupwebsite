@@ -1,0 +1,104 @@
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 11;
+  left: 0;
+   height: 800px;
+  right: 0;
+  background: rgba(153, 41, 218, 0.63);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background-color: rgb(49, 161, 146);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: white;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #0614d8;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+ @media screen and (max-width :450px){
+    .overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 11;
+  left: 0;
+   height: 800px;
+  right: 0;
+  background: rgba(174, 171, 175, 0.63);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.content 
+{
+    width: 120%;
+}
+.popup 
+{
+     
+    background-color: rgb(168, 19, 106);
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.harga{ 
+    color: aliceblue;
+}
+h2 { 
+     font-size: 4px;
+}
+ .pesan img { 
+    background: white;
+      border: 1px solid blue ;
+    text-decoration: none;
+     color: aqua;
+ }
+ }
